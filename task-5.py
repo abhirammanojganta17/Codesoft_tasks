@@ -1,17 +1,18 @@
+print("-----------Contact Book-----------")
 contacts = {}
 
 while True:
     print("\n1. Add Contact")
     print("2. View Contacts")
     print("3. Search a Contact")
-    print("4. Delete Contact")
+    print("4. Delete a Contact")
     print("5. Exit")
 
     choice = int(input("Enter your choice: "))
 
     if choice == 1:
-        name = input("Enter name: ")
-        number = input("Enter phone number: ")
+        name = input("Enter The name: ")
+        number = input("Enter The phone number: ")
 
         contacts[name] = number
         print("Contact added")
@@ -20,7 +21,7 @@ while True:
         print(contacts)
 
     elif choice == 3:
-        name = input("Enter name to search: ")
+        name = input("Enter The name to search: ")
 
         if name in contacts:
             print("Phone Number:", contacts[name])
@@ -28,11 +29,11 @@ while True:
             print("Contact not found")
 
     elif choice == 4:
-        name = input("Enter name to delete: ")
+        name = input("Enter a name to delete: ")
 
         if name in contacts:
             del contacts[name]
-            print("Contact deleted")
+            print("Contact Was deleted")
         else:
             print("Contact not found")
 
