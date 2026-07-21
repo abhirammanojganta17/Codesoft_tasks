@@ -3,7 +3,7 @@ contacts = {}
 while True:
     print("\n1. Add Contact")
     print("2. View Contacts")
-    print("3. Search Contact")
+    print("3. Search a Contact")
     print("4. Delete Contact")
     print("5. Exit")
 
